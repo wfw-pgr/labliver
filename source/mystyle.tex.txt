@@ -1,0 +1,16 @@
+%% ---- 数式記号 ( ベクトル演算 ) ---- %%
+\newcommand{\bvec}[1]{\mbox{\boldmath $#1$}}
+\newcommand{\grad}   { \bvec{ \nabla } }
+\newcommand{\divv}   { \bvec{ \nabla } \cdot  }
+\newcommand{\deldel}[2]{ \dfrac{ \partial #1 }{ \partial #2 } }
+\newcommand{\rot}{ \bvec{ \nabla } \times }
+\newcommand{\moment}[1]{ \langle #1 \rangle  }
+\newcommand{\vvec}{ \bvec{v} }
+\newcommand{\xvec}{ \bvec{x} }
+\newcommand{\Evec}{ \bvec{E} }
+\newcommand{\Bvec}{ \bvec{B} }
+\newcommand{\Jvec}{ \bvec{J} }
+\newcommand{\uvec}{ \bvec{u} }
+\newcommand{\paren}  [1]{ \left( #1 \right) }
+\newcommand{\sqparen}[1]{ \left[ #1 \right] }
+\newcommand{\abs}    [1]{ \left| #1 \right| }

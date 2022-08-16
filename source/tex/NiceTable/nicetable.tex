@@ -1,0 +1,112 @@
+\documentclass[uplatex,class=jsarticle]{standalone}
+%% class   :: jsarticle --> 日本語
+%% standalone環境 or previewパッケージ  :: standaloneでクロップできる．
+%% \usepackage[active,dvipdfmx,tightpage]{preview}
+
+%% 文字コード / フォント関連
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[utf8x]{inputenc}
+\usepackage{lmodern} %せめてLatin Modernを使いたい
+\usepackage{pxchfon}
+
+%% tikz向けパッケージ
+\usepackage[dvipdfmx,dvipsnames,table]{xcolor}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{array}
+\usepackage{tikz}
+
+%% 環境定義用
+\usepackage{environ}
+
+%% -------------- rndtable 環境 ( 拾い物 ) -------------- %%
+\newsavebox{\tablebox}
+\definecolor{tablecolor}{named}{ForestGreen}
+
+\NewEnviron{rndtable}[1]{%
+  \addtolength{\extrarowheight}{1ex}%
+  \rowcolors{2}{tablecolor!20}{tablecolor!40}%
+  \sffamily
+  \newcommand{\header}[1]{%
+    \multicolumn{1}{l}{%
+      \cellcolor{tablecolor}%
+      \color{white}%
+      \bfseries##1%
+    }%
+  }%
+  \savebox{\tablebox}{%
+    \begin{tabular}{#1}%
+      \BODY
+    \end{tabular}%
+  }%
+%
+  \begin{tikzpicture}
+    \begin{scope}
+      \clip[rounded corners=1ex]
+        (0,-\dp\tablebox) rectangle (\wd\tablebox,\ht\tablebox);
+      \node at (0,-\dp\tablebox) [anchor=south west,inner sep=0pt]
+            {\usebox{\tablebox}};
+    \end{scope}
+    \draw[tablecolor,very thick,rounded corners=1ex]
+      (0,-\dp\tablebox) rectangle (\wd\tablebox,\ht\tablebox);
+  \end{tikzpicture}%
+}
+
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+%% -------------- rndtable ここまで -------------- %%
+
+
+
+
+%% --------- Sample ドキュメント はじまり --------- %%
+
+%% --- Original --- %%
+
+%% \begin{document}
+%% %% \begin{preview}
+%%   %\captionof{table}{Caption}
+%%   \footnotesize
+%%   \begin{rndtable}{l P{4cm}  P{2.8cm} P{2cm}} %  
+%%     \header{Country} &
+%%     \header{Variable} &
+%%     \header{Target} &
+%%     \header{\parbox[t]{2cm}{Frequency \\ of Setting  \\ \strut the Target}} \\
+%%     \textbf{Afghanistan} & Currency in circulation (CiC) & Growth rate of CiC & Annual \\
+%%     \textbf{Bangladesh} & Broad money  & M2 growth rate & Annual \\
+%%     \textbf{Bhutan} & Exchange rate & 1BTN=1INR & Irregular \\
+%%     \textbf{India} & Multiple indicators & No specific targets & Annual \\
+%%     \textbf{Maldives} & Exchange rate & 12.85MVR=1USD (+/-20\%) & Irregular \\
+%%     \textbf{Nepal} & Exchange rate & NA & NA \\
+%%     \textbf{Pakistan} & Inflation, together with an assessment of monetary aggregates  & Projections of inflation relative to the announced target and projections of various components of monetary aggregates  & Annual \\
+%%     \textbf{ああ} & Broad money & Consolidated Broad Money (M2b)  & Annual \\
+%%   \end{rndtable}
+%% %% \end{preview}
+%% \end{document}
+
+
+%% --- 日本語 ver. --- %%
+
+\begin{document}
+%% \begin{preview}
+  %\captionof{table}{Caption}
+  \footnotesize
+  \begin{rndtable}{l P{4cm}  P{2.8cm} P{2cm}} %  
+    \header{国} &
+    \header{変数} &
+    \header{ターゲット} &
+    \header{\parbox[t]{2cm}{Frequency \\ of Setting  \\ \strut the Target}} \\
+    \textbf{怒りのアフガン} & Currency in circulation (CiC) & Growth rate of CiC & Annual \\
+    \textbf{Bangladesh} & 広い金  & M2 growth rate & Annual \\
+    \textbf{Bhutan} & Exchange rate & 1BTN=1INR & Irregular \\
+    \textbf{India} & Multiple indicators & No specific targets & Annual \\
+    \textbf{Maldives} & Exchange rate & 12.85MVR=1USD (+/-20\%) & Irregular \\
+    \textbf{ネパール} & こうかんりつ & NA & NA \\
+    \textbf{ぱきすたん} & Inflation, together with an assessment of monetary aggregates  & Projections of inflation relative to the announced target and projections of various components of monetary aggregates  & Annual \\
+    \textbf{スリランカ} & Broad money & Consolidated Broad Money (M2b)  & Annual \\
+  \end{rndtable}
+%% \end{preview}
+\end{document}
+
+
+%% --------- Sample ドキュメント 終わり --------- %%

@@ -1,0 +1,32 @@
+Variables in file: ./bfield_inline.dat
+Elmer version: 8.4
+Elmer revision: 0131a585
+Elmer compilation date: 2020-02-29
+Solver input file: line_current.sif
+File started at: 2020/05/05 12:57:59
+Number of data nodes for each step
+  bc nodes: 0
+  polyline nodes: 101
+  circle nodes: 0
+  isocurve nodes: 0
+Data on different columns
+  1: Iteration step
+  2: Boundary condition
+  3: Node index
+  4: coordinate 1
+  5: coordinate 2
+  6: coordinate 3
+  7: coilpot
+  8: coilcurrent 1
+  9: coilcurrent 2
+ 10: coilcurrent 3
+ 11: magnetic flux density e 1
+ 12: magnetic flux density e 2
+ 13: magnetic flux density e 3
+ 14: magnetic field strength e 1
+ 15: magnetic field strength e 2
+ 16: magnetic field strength e 3
+ 17: current density e 1
+ 18: current density e 2
+ 19: current density e 3
+ 20: joule heating e

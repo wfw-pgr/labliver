@@ -1,0 +1,233 @@
+##############################################################
+Sphinxの備忘録
+##############################################################
+
+
+=================================================
+aaaaaa
+=================================================
+
+
+==========================
+Sphinxの導入
+==========================
+
+:author: kent
+
+概要
+======================
+
+| Pythonベースのドキュメント作成ソフトSphinxを入れてみた．
+| 主な目的は
+|
+
+* PC周りの備忘録
+* シミュレーションログ
+* 研究ノート
+* 整理したい理論のメモ
+
+| などなど．
+|
+| いじってみた感想は，python本家と同様，
+|
+
+* コードの可読性
+* LEGO likeなテーマ
+* 簡単かつ日本語ドキュメントの充実性
+
+|
+
+などが特徴．はやりがなんなのかは知らんが，Markdownが主流，reStructure型は廃れた的なsomethingをどっかで見たが，そうでもないみたいなのでsphinxを始めてみた的なsomethingも同時に発言してて本当かどうかはわからない．ver.1.3.5が最新っぽいので，まだまだ続くのか，よく出来ててメジャーアップデートの必要性がないのかはよくわからない．
+| 
+
+quickstart
+=============================
+
+Sphinx始めるときの魔法の言葉．
+
+.. code-block:: rest
+   
+   $ sphinx-quickstart
+
+   
+だいたいEnterでいいっぽい．
+
+
+HTML作成
+
+
+プロジェクト名で指定したディレクトリ(Makefileが存在する場所)で，
+
+::
+   
+   $ make html
+
+するとhtmlが生成される．
+
+
+
+TeXでpdf作成
+=============
+
+::
+
+   $ make latex
+
+で，latex用ディレクトリの作成．build/latex/に移動し，make
+
+::
+
+   $ cd build/latex/
+   $ make all-pdf-ja
+
+で日本語pdfの出力ができる．
+
+
+数式打つには，conf.pyに
+
+::
+   
+   extensions = ['sphinx.ext.pngmath']
+
+を追加．本文には，
+
+::
+   
+   .. math::
+   
+      E = m c^2
+
+      
+
+と入力すれば，
+
+.. math::
+
+   E = m c^2
+
+がpng形式にて出力.
+defaultフォントはTimes．
+
+
+
+ファイルからのコード引用の仕方
+===============================
+
+.. code-block:: rest
+
+   .. literalinclude :: filename
+      :language: fortran
+      :emphasize-lines: 12-14
+      :linenos: 
+
+
+として入力. languageは言語指定，emphasize-linesは強調(若干の太字指定)，linenosは行番号を表示する．
+
+Link : http://docs.sphinx-users.jp/markup/code.html
+
+
+画像を貼り付ける
+================================
+
+::
+   
+   .. image:: ../img/sphinx.png
+      :scale: 40%
+      :height: 100px
+      :width: 200px
+      :align: left
+
+
+
+打ち消し線と赤文字の導入
+=======================================
+
++ 過去からの変更を示す打ち消し線と強調させるための赤文字の導入．
+  
+  - 参考サイト( Sphinxで打ち消し線を使う : http://labs.timedia.co.jp/2012/04/sphinx.html )
+
+|
+
++ 使い方は以下の通り．
+
+  - 打ち消し線
+  
+  ::
+     
+     :strike:`aaa`
+
+  :strike:`ここを打ち消すのです．`
+  
+
+  ::
+
+     :red:`aaa`
+
+  :red:`あれ？蘭姉ちゃん，顔が赤いよ？`
+
+
+
+
+コンパイル上の注意点
+========================================
+
+* ディレクティブのあとには一行挿入しましょう．
+* セクションやタイトルのはじめに空白をいれてはならない．
+
+
+コードの書き方
+========================================
+
+
+* code-blockが良さそう．
+
+  + シンタックスハイライトをしてくれる．
+  + 使い方は以下の通り．
+
+    .. code-block:: rest
+		  
+       .. code-block:: python
+
+	  import numpy as np
+	  import matplotlib.plot as mpl
+       
+
+  + 出力結果は以下の通り．
+    
+    .. code-block:: python
+
+       import numpy as np
+       import matplotlib.plot as mpl
+       
+
+インクルードのテスト
+=======================================
+
+* includeのテスト．以下に *literalinclude* 及び *include* を用いてコードの挿入を行ってみる．
+
++ literalinclude
+  
+.. code-block:: rest
+
+   .. literalinclude:: aaa.rst
+      :language: rest
+      :linenos:
+  
+.. literalinclude:: aaa.rst
+   :language: rest
+   :linenos:
+
+
++ include
+      
+.. code-block:: rest
+
+   .. include:: aaa.rst
+
+		
+.. include:: aaa.rst
+
+
+
+* つまり，読み込んだファイルを **reST** として動作させたい場合は **include** を使えば良い．
+* 逆にそうさせたくない場合は，(引用として用いたい場合は，) **literalinclude** を使えば良い．
