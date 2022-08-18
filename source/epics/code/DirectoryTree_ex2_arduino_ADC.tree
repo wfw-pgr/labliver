@@ -1,0 +1,57 @@
+epics@raspberrypi:~/epics/app/simpleRead $ tree
+.
+├── Makefile
+├── bin
+│   └── linux-arm
+│       └── simpleRead
+├── configure
+│   ├── CONFIG
+│   ├── CONFIG_SITE
+│   ├── Makefile
+│   ├── O.Common
+│   ├── O.linux-arm
+│   │   └── Makefile
+│   ├── RELEASE
+│   ├── RULES
+│   ├── RULES.ioc
+│   ├── RULES_DIRS
+│   └── RULES_TOP
+├── db
+│   └── simpleRead.db
+├── dbd
+│   └── simpleRead.dbd
+├── iocBoot
+│   ├── Makefile
+│   └── iocsimpleRead
+│       ├── Makefile
+│       ├── envPaths
+│       └── st.cmd
+├── lib
+│   └── linux-arm
+├── protocols
+│   └── simpleRead.proto
+└── simpleReadApp
+    ├── Db
+    │   ├── Makefile
+    │   ├── O.Common
+    │   ├── O.linux-arm
+    │   │   └── Makefile
+    │   └── simpleRead.db
+    ├── Makefile
+    └── src
+        ├── Makefile
+        ├── O.Common
+        │   └── simpleRead.dbd
+        ├── O.linux-arm
+        │   ├── Makefile
+        │   ├── simpleRead
+        │   ├── simpleRead.dbd.d
+        │   ├── simpleReadMain.d
+        │   ├── simpleReadMain.o
+        │   ├── simpleRead_registerRecordDeviceDriver.cpp
+        │   ├── simpleRead_registerRecordDeviceDriver.d
+        │   └── simpleRead_registerRecordDeviceDriver.o
+        └── simpleReadMain.cpp
+
+19 directories, 33 files
+epics@raspberrypi:~/epics/app/simpleRead $ 

@@ -1,0 +1,7 @@
+record(longin,"epics:simpleRead")
+{
+  field(DESC, "A/D convertor raw input signal" )
+  field(DTYP, "stream")
+  field(INP, "@simpleRead.proto getval PS1")
+  field(SCAN, "I/O Intr")
+}

@@ -131,6 +131,12 @@ html_logo = 'settings/logo.png'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+# -- add by n.k. -- #
+# html_css_files = ["custom.css"] -- no effect ?? -- 
+# -- "_static/custom.css" will be the optional custum theme. -- #
+
+
+
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
 #html_last_updated_fmt = '%b %d, %Y'

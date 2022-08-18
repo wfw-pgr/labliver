@@ -41,9 +41,12 @@ EPICSの特徴
 
    ../rst/basic_startup
    ../rst/vocabulary
+   ../rst/example1__httpRequest_to_Google
+   ../rst/example2__arduino_ADConvertor
+   ../rst/example3__arduino_LEDcontrol01
+   ../rst/example4__arduino_LEDcontrol02
 
-
-  
+   
 =========================================================
 References
 =========================================================
@@ -53,4 +56,10 @@ References
 * EPICS Users JP ( KEK EPICS wiki,  https://cerldev.kek.jp/trac/EpicsUsersJP )
 * その他資料リンク ( EPICS Users JP, https://cerldev.kek.jp/trac/EpicsUsersJP/wiki/intro )
 * Getting-Started EPICS controls ( https://docs.epics-controls.org/projects/how-tos/en/latest/getting-started/installation.html )
-  
+* 参考ノート： "https://note.com/dev_associate/n/nfa4605c70f60", "https://note.com/dev_associate/n/nd886d700b10a"
+* OPI/IOC通信時のポート番号、IPアドレスの設定 ( https://epics.anl.gov/EpicsDocumentation/AppDevManuals/ChannelAccess/cadoc_4.htm )
+* Arduino-EPICS サンプル ( KEK-EPICS Users JP, https://cerldev.kek.jp/trac/EpicsUsersJP/wiki/epics/arduino/simpleRead )
+* Github:inigoalonso/setup-epics-serial-arduino ( arduino-EPICS  https://gist.github.com/inigoalonso/99d9076c672661a4b821 )
+* StreamDevice -protocol Files- ( https://paulscherrerinstitute.github.io/StreamDevice/protocol.html )
+* Arduino PWM 制御 ( https://deviceplus.jp/arduino/how-to-control-led-with-arduino-pwm/ )
+* EPICS Record Reference ( https://epics.anl.gov/base/R7-0/6-docs/RecordReference.html )

@@ -1,0 +1,6 @@
+record( stringout, "epics:lightupLED" )
+{
+  field( DESC, "var to light up LEDs" )
+  field( DTYP, "stream" )
+  field( OUT , "@lightupLED.proto putval PS1" )
+}

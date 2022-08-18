@@ -1,0 +1,7 @@
+record( stringout, "epics:pwmLED" )
+{
+  field( DESC, "pwm of LED" )
+  field( DTYP, "stream" )
+  field( OUT , "@pwmLED.proto putval PS1")
+  field( SCAN, "I/O Intr" )
+}

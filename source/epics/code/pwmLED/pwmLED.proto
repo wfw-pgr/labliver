@@ -1,0 +1,6 @@
+
+Terminator = CR LF;
+
+putval{
+  out "%s";
+}
