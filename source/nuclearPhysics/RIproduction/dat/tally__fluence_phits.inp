@@ -1,0 +1,18 @@
+[T-Track]
+    mesh  = reg
+    reg   = 301
+    volume
+    reg     vol
+    301     1.0
+  e-type  = 2
+     ne   = 100
+     emin = 0.0
+     emax = 50.0
+     part = photon
+     unit = 2   $$ unit is [1/cm^2/MeV/source]
+     axis = eng
+     file = out/eng_vs_fluence_in_target.dat
+    title = Fluence [1/cm^2/MeV/source]
+    gshow = 1
+   epsout = 1
+

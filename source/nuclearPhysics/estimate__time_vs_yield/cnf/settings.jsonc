@@ -1,0 +1,62 @@
+{
+    
+    "series":[ "beamON.01", "beamOFF.01", "milking.01", "milking.02" ],
+    "A0.init":0.0, 
+    "B0.init":0.0,
+    "tHalf.A":14.9,
+    "tHalf.B": 9.9,
+    "t.unit":"d",
+    "Y.efficiency":1.66e-5,
+    "Y.ingredient.Bq":240e6,
+    "Y.beamcurrent.uA":211.0,
+    "Y.peakRatio.B/A":0.44,
+
+    "figure.xAutoRange":false,
+    "figure.yAutoRange":false,
+    
+    "figure.num.pngFile":"png/time_vs_atoms.png",
+    "figure.num.y.normalize": 1.0,
+    "figure.num.xMinMaxNum":[ 0.0,    50.0,  6 ],
+    "figure.num.yMinMaxNum":[ 0.0, 3.0e14, 7 ],
+    "figure.num.xTitle" :"Time (d)", 
+    "figure.num.yTitle" :"Number of Atoms", 
+    "figure.num.label.A":"A", 
+    "figure.num.label.B":"B", 
+
+    "figure.act.pngFile":"png/time_vs_activity.png",
+    "figure.act.y.normalize": 1.0e6, 
+    "figure.act.xMinMaxNum":[ 0.0,  50.0, 6 ],
+    "figure.act.yMinMaxNum":[ 0.0, 140.0, 8 ],
+    "figure.act.xTitle" :"Time (d)", 
+    "figure.act.yTitle" :"Activity (MBq)", 
+    "figure.act.label.A":"A",
+    "figure.act.label.B":"B",
+
+    "beamON.01":{
+	"t0":0.0, 
+	"t1":4.41,
+	"Yr":1.0,
+	"nps":31 
+    }, 
+    "beamOFF.01":{
+	"t0":4.41, 
+	"t1":20.0,
+	"Yr":0.0,
+	"nps":151 
+    },
+    "milking.01":{
+	"t0":20.0, 
+	"t1":37.5,
+	"Yr":0.0,
+	"nps":175, 
+	"milking":true
+    },
+    "milking.02":{
+	"t0":37.5, 
+	"t1":50.0,
+	"Yr":0.0,
+	"nps":125, 
+	"milking":true
+    }
+    
+}

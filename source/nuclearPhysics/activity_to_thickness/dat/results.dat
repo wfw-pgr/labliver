@@ -1,0 +1,11 @@
+
+[results]
+                     rho.g/cm3 :: 4.9
+                       M.g/mol :: 297.0
+                        T1/2.s :: 55000000000.0
+                          Q.Bq :: 100000.0
+                         S.cm2 :: 0.0707
+                       outFile :: dat/results.dat
+                   n.atoms/cm3 :: 9.931986531986532e+21
+                   lambda.s^-1 :: 1.2602676010180823e-11
+                      thick.cm :: 1.1300084541929587e-05

@@ -1,0 +1,8 @@
+{
+    "rho.g/cm3":4.9,
+    "M.g/mol":297.0,
+    "T1/2.s":5.5e10,
+    "Q.Bq":100e3,
+    "S.cm2":7.07e-2,
+    "outFile":"dat/results.dat"
+}

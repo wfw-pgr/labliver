@@ -89,7 +89,6 @@ IOC構築 / テスト の手順
   .. literalinclude:: ../code/pwmLED/pwmLED.db
                       :caption: pwmLED.db
                       :language: shell
-                      :linenos:
 
         
 * データベースのコンパイル対象として、上記の"pwmLED.db"を追加． ::
@@ -123,7 +122,6 @@ IOC構築 / テスト の手順
   .. literalinclude:: ../code/pwmLED/pwmLED.proto
                       :caption: pwmLED.proto
                       :language: shell
-                      :linenos:
 
     
 ---------------------------------------------------------
@@ -135,7 +133,6 @@ IOC構築 / テスト の手順
     .. literalinclude:: ../code/pwmLED/st.cmd
                         :caption: st.cmd
                         :language: shell
-                        :emphasize-lines: 14,20,24,25
 
                 
     .. warning::

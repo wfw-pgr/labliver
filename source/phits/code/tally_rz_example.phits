@@ -1,0 +1,27 @@
+[t-track]
+
+   mesh = r-z
+     x0 = 0.0
+     y0 = 0.0
+
+ r-type = 2
+     nr = 100
+   rmin =  0.0
+   rmax = 10.0
+
+ z-type = 2
+     nz =    1
+   zmin = -1.0
+   zmax = +1.0
+
+ e-type = 2
+     ne =    1
+   zmin =  0.0      # unit:: [MeV]
+   zmax =  100.0
+
+   part = (electron photon neutron proton)
+   unit = 1         # [1/cm2/source]
+   file = out/fluence_r1d.dat
+  x-txt = radius [cm]
+  y-txt = fluence [1/cm2]
+ epsout = 1

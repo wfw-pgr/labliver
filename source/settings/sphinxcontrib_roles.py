@@ -2,11 +2,9 @@
 import os
 from docutils.parsers.rst import roles
 
-
 def _define_role(name):
     base_role = roles.generic_custom_role
     role = roles.CustomRole(name, base_role, {'class': [name]}, [])
-
     roles.register_local_role(name, role)
 
 

@@ -1,0 +1,25 @@
+
+[t-Cross]
+
+  mesh = reg        $$ mesh = [ xyz,reg,r-z, etc.]
+  reg  = 5          $$ #.of cells 
+    r-from      r-to     area
+    331		321	 1.00
+    332		321	 1.0
+    321		331	 1.0
+    321		332	 1.0
+    321		301	 1.0
+  e-type = 2
+      ne = 1
+    emin = 0
+    emax = 1.0e3
+    unit = 1         $$ ( unit:1 => 1/cm2/source )
+  output = current
+  axis   = reg
+  factor = 1.0
+  part   = electron photon
+  title  = particle crossing the surface.
+  file   = tcross__example.dat
+  epsout = 1
+
+

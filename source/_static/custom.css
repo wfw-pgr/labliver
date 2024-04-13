@@ -1,3 +1,42 @@
 :root {
     --pst-font-size-base: 10px;
 }
+
+cite, code, tt {
+    font-family: 'Ricty','Ricty Diminished','DejaVu Sans Mono', 'monospace';
+    /* font-family: 'Ricty'; */
+}
+
+pre {
+    font-family: 'Ricty','Ricty Diminished','DejaVu Sans Mono', 'monospace';
+    /* font-family: "Ricty"; */
+}
+
+/*
+body {
+    font-family: "Ricty";
+}
+*/
+
+.basictext {
+    font-family: 'Ricty','Ricty Diminished','DejaVu Sans Mono', 'monospace';
+    color: blue;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+.redbold {
+    color: red;
+}
+
+.blue {
+    color: blue;
+    font-weight: bold;
+}

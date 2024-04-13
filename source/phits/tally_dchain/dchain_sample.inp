@@ -1,0 +1,52 @@
+
+$$ --------------------------------------------------------- $$
+$$ --- volume settings                                   --- $$
+$$ --------------------------------------------------------- $$
+
+[volume]
+
+  reg           vol
+  301		1.0
+  302		2.0
+  303		3.0
+
+
+
+$$ --------------------------------------------------------- $$
+$$ --- dchain tally settings                             --- $$
+$$ --------------------------------------------------------- $$
+
+[T-dchain]
+
+    $$ -- mesh / output settings -- $$
+    mesh    = reg
+    reg     = 301 302 303
+    file    = out/tdchain.out
+
+    $$ -- beam on/off settings   -- $$
+    timeevo = 2       $$ #. of 
+    100  h     1.0    $$ (value) (unit) (beam intensity)
+    365  d     0.0
+
+    $$ -- output time interval   -- $$
+    outtime = 12
+    1.0    h
+    2.0    h
+    5.0    h
+    10.0   h
+    1.0    d
+    2.0    d
+    5.0    d
+    10.0   d
+    20.0   d
+    50.0   d
+    100.0  d
+    365.0  d
+
+    $$ -- amplitude -- $$
+    amp      = 1.0     $$ [ source / sec ]
+                       $$ ==>  if [source's factor == uA etc., => 1.0]
+    
+
+
+

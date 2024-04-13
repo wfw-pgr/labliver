@@ -33,8 +33,8 @@ shell script 内で
    for ((i=1;i<20;i++)); do echo $i; done
 
    
-.. image:: ../figure/shell_output_image.png
-   :width:  800px
+.. image:: ../image/shell_output_image.png
+   :width:  600px
    :align:  center
 
    
@@ -47,3 +47,15 @@ shell script 内で
 
    for f in *.f90; do echo $f; done
 
+
+---------------------------------------------------------
+seq コマンドを使って
+---------------------------------------------------------
+
+.. code-block:: shell
+   :caption: seq コマンドで数字を生成
+
+   for ik in `seq -w 1 14`; do cp ems_pst_0${ik}.inp ems_slv_0${ik}.inp; done
+
+
+* ( seq -w 1 14 で, ik=01-14を生成 )

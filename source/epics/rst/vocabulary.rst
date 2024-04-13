@@ -11,9 +11,12 @@ EPICS制御の機器構成・概念を理解する上で必要となる用語に
    :header: "用語", "略, 別名", "説明"
    :widths: 10, 15, 30
             
-   "EPICS","Experimental Physics and Industrial Control System","制御用ミドルウェア、ツールパッケージの総称"
-   "IOC", "Input/Output Controler", "ハード側の制御器．ハード機器に制御命令を出す．下位層にあたる．"
-   "OPI", "OPerational Interface", "ユーザ側の制御ソフトウェア．上位層．"
+   "EPICS", "Experimental Physics and Industrial Control System", "制御用ミドルウェア、ツールパッケージの総称"
+   "IOC",   "Input/Output Controler", "ハード側の制御器．ハード機器に制御命令を出す．下位層にあたる．"
+   "OPI",   "OPerational Interface", "ユーザ側の制御ソフトウェア．上位層．"
+   "PV",    "Process Variable", "EPICS上で定義されている変数"
+   "CA",    "Channel Access", "PVを参照する行為．caget, caput, camonitor など．（チャネルアクセス）"
+   "softIOC", "", "ハードウェアがぶらさがっていないIOC、または、softIOCの起動に用いるコマンド．"
 
 ---------------------------------------------------------
 モジュール・ソフトウェア編
