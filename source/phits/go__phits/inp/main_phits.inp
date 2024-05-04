@@ -1,0 +1,5 @@
+
+$ <loadJSON> filepath = "inp/parameters.json"
+$ <include>  filepath = "inp/source_phits.inp"
+$ <include>  filepath = "inp/materialsDB_phits.inp"
+

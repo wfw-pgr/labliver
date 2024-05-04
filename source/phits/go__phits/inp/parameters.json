@@ -1,0 +1,9 @@
+{
+
+    "beam.totfact": 1000.0,
+    "beam.HWHM": "` 5.0 * @beam.totfact`",
+    "beam.zStart": -100.0,
+    "beam.zEnd": -30.0,
+    "beam.energy": 45.0,
+    
+}

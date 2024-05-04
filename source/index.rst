@@ -30,7 +30,7 @@
    vtk/index
    git/rst/git_index
    emacs/rst/emacs_index
-   python/rst/python_index
+   python/python_index
 
    
 |
@@ -49,7 +49,7 @@
    invProblem/index
    analyticalMechanics/index
    electromagnetism/index
-   phits/rst/phits_index
+   phits/phits_index
    nuclearPhysics/nuclearPhysics_index
 
 |

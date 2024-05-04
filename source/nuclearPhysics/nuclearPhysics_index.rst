@@ -52,6 +52,7 @@
    RIproduction/RIproduction_p5
    RIproduction/RIproduction_p6
    RIproduction/RIproduction_p7
+   aiming__byCorrelationFunction/aiming__byCorrelationFunction
    solve__thickOfCupShapedRI/solve__thickOfCupShapedRI
    attenation_correction/attenation_correction
    transportation_RI/transportation_RI_01

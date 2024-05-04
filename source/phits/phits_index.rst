@@ -18,11 +18,13 @@ PHITS とは？
 .. toctree::
    :maxdepth: 1
 
-   ace_database
-   electron_transport
-   tally_settings
-   tcross
-   ../tally_dchain/tally_dchain
+   rst/ace_database
+   rst/electron_transport
+   rst/tally_settings
+   rst/tcross
+   tally_dchain/tally_dchain
+   materials__fromDatabase/materials__fromDatabase
+   go__phits/go__phits
 
 =========================================================
 References
