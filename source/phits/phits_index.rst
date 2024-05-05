@@ -23,7 +23,7 @@ PHITS とは？
    rst/tally_settings
    rst/tcross
    tally_dchain/tally_dchain
-   materials__fromDatabase/materials__fromDatabase
+   materials__fromJSON/materials__fromJSON
    go__phits/go__phits
 
 =========================================================
