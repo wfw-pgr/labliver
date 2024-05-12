@@ -29,19 +29,39 @@
   医学、エネルギー、地球科学、宇宙物理学など、さまざまな分野で応用される．
 
   
+|
+  
 =========================================================
 本備忘録の構成
 =========================================================
 
+---------------------------------------------------------
+核物理学の基礎知識
+---------------------------------------------------------
+
 .. toctree::
    :maxdepth: 1
 
+   neutronPhysics/neutronPhysics_p1
+   neutronPhysics/neutronPhysics_p2
+   nuclear_transmutation/nuclear_transmutation
+   radiative_equilibrium/radiative_equilibrium
    brems_efficiency/brems_efficiency
    relativeError_cps/relativeError_cps
-   radiative_equilibrium/radiative_equilibrium
-   estimate__time_vs_yield/estimate__time_vs_yield_p1
-   estimate__time_vs_yield/estimate__time_vs_yield_p2
-   activity_to_thickness/activity_to_thickness   
+   ENDF/whatisENDF
+   transportation_RI/transportation_RI_01
+   transportation_RI/transportation_RI_02
+   transportation_RI/transportation_RI_03
+
+|
+
+---------------------------------------------------------
+RI製造量計算
+---------------------------------------------------------
+
+.. toctree::
+   :maxdepth: 1
+
    cross_section_unit/cross_section_unit
    Ra226_cross_section/Ra226_cross_section
    GDR__BreitWignerFormula/GDR__BreitWignerFormula
@@ -51,19 +71,15 @@
    RIproduction/RIproduction_p4
    RIproduction/RIproduction_p5
    RIproduction/RIproduction_p6
-   RIproduction/RIproduction_p7
-   aiming__byCorrelationFunction/aiming__byCorrelationFunction
-   solve__thickOfCupShapedRI/solve__thickOfCupShapedRI
+   estimate__RIproduction/estimate__RIproduction
+   estimate__time_vs_yield/estimate__time_vs_yield_p1
+   estimate__time_vs_yield/estimate__time_vs_yield_p2
+   activity_to_thickness/activity_to_thickness   
    attenation_correction/attenation_correction
-   transportation_RI/transportation_RI_01
-   transportation_RI/transportation_RI_02
-   transportation_RI/transportation_RI_03
-   neutronPhysics/neutronPhysics_p1
-   neutronPhysics/neutronPhysics_p2
-   nuclear_transmutation/nuclear_transmutation
-   ENDF/whatisENDF
+   solve__thickOfCupShapedRI/solve__thickOfCupShapedRI
+   aiming__byCorrelationFunction/aiming__byCorrelationFunction
 
-   
+|
 
 =========================================================
 References

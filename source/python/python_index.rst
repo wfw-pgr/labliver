@@ -35,6 +35,7 @@ pythonとは
    json_module/json_module_p2
    precompile__parameterFile/precompile__parameterFile
    command__postProcess/command__postProcess
+   retrieveData__afterStatement/retrieveData__afterStatement
 
 
    
