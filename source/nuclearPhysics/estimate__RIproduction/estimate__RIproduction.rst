@@ -48,7 +48,7 @@ RI製造量計算コードの使い方
    
    "target.activity.Bq", "float", "ターゲット物質の放射能 (Bq)"
    "target.halflife", "dict", "ターゲット物質の半減期 value（値）とunit(単位)で指定．"
-   "target.area.type", "string", "面積タイプ：'direct' / 'cylinder'"
+   "target.area.type", "string", "面積タイプ：'direct' / 'cylinder' (thick.type=fluenceでは表示のみ)"
    "target.thick.type", "string", "'Bq', 'direct', 'fluence' ( Bqは面積と放射能から厚みを決定、directは直接厚みを指定する、fluenceは厚みはPHITS側の光子フラックスから厚みを換算する． )"
    "photon.filetype", "string", "'energy-fluence'：エネルギーと光子束の２列データ / 'phits-out'：e-lower e-upper photon_flux error"
    "photon.filename", "string", "光子フラックスファイルのパス"

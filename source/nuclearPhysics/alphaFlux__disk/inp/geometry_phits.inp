@@ -1,0 +1,44 @@
+
+$$ ========================================================== $$
+$$ ===       geometry_phits.inp                           === $$
+$$ ========================================================== $$
+$$
+[Surface]
+
+   $$ ------------------------------------------- $$
+   $$ --- [1] buffer / boundingbox             -- $$
+   $$ ------------------------------------------- $$
+   $$ [surfNum] [rpp] [xMin] [xMax] [yMin] [yMax] [zMin] [zMax]  -- $
+   11  rpp  @bb.xMin   @bb.xMax   @bb.yMin   @bb.yMax   @bb.zMin   @bb.zMax
+   21  rpp  @buff.xMin @buff.xMax @buff.yMin @buff.yMax @buff.zMin @buff.zMax
+
+   $$ ------------------------------------------- $$
+   $$ --- [2] irradiation target               -- $$
+   $$ ------------------------------------------- $$
+   $$ [surfNum] [rcc] [x0] [y0] [z0] [dx] [dy] [dz] [r0] -- $
+   31  rcc  @target.x0 @target.y0 @target.z0 @target.dx @target.dy @target.dz @target.radius
+
+
+[Cell]
+
+   $$ ------------------------------------------- $$
+   $$ --- [1] buffer / boundingbox             -- $$
+   $$ ------------------------------------------- $$
+   $$  [cellNum]  [matNum]  [Density]  [surfNums]
+   311 @Air.matNum       @Air.Density     -11 +21
+   321 @Air.matNum	     @Air.Density     -21 +31
+   301 -1                                 +11
+
+   $$ ------------------------------------------- $$
+   $$ --- [2] irradiation target               -- $$
+   $$ ------------------------------------------- $$
+   331 @Pa231.matNum	 @Pa231.Density   -31
+
+
+   $$ ------------------------------------------- $$
+   $$ --- [x] template of surface geometry     -- $$
+   $$ ------------------------------------------- $$
+   $$ [cellNum]   [matNum] [Density]  [surfNums]  #<cellNum>      <- NOT operator !!
+   $$ [cellNum]   [matNum] [Density]  [surfNums]  #(<surfNum>)    <- USE () for surface num.
+   $$ [surfNum]   [sx/sy/sz] [radius] [z-pos]
+

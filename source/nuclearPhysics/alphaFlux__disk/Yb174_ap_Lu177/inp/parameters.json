@@ -1,0 +1,94 @@
+{
+    
+    // ---------------------------------------------- //
+    // ---  Parameters Section                   ---- //
+    // ---------------------------------------------- //
+    "OMP.nThreads"      : 4,
+    "nParticle"         : 1.0e6,
+    "nBatch"            : 10,
+    "nCascade"          : "@nParticle/@nBatch",
+    
+    "mm"                : 0.1,
+    "pi"                : 3.14159265358,
+    "ln2"               : 0.69314718056,
+    "NAvogadro"         : 6.02e23,
+    
+    "target.mass"       : 1.0,            // (g)
+    "target.density"    : 15.37,          // (g/cm3)
+    "target.diameter"   : "10.0 * @mm",
+    "target.radius"     : "0.50 * @target.diameter",
+    "target.area"       : "@pi * @target.radius**2",
+    "target.volume"     : "@target.mass / @target.density",
+    "target.thick"      : "@target.volume / @target.area",
+
+    "phits_output"      : "out/phits.out", 
+    // Directory of PHITS  // 133.144.160.74
+    "phits_directory"   : "/mnt/c/phits/build_phits328A/phits/",
+    // Directory of PHITS  // 133.144.160.159
+    // "phits_directory"   : "/mnt/e/nishida/phits/build/phits/",
+    // Directory of PHITS  // 133.144.160.73
+    // "phits_directory"   : "/mnt/c/kent/phits/build/phits/",
+
+
+    // ---------------------------------------------- //
+    // ---  source part :: beam settings         ---- //
+    // ---------------------------------------------- //
+
+    "beam.energy"       : 50.0,
+    "beam.nNuclei"      : 4.0,
+    "beam.MeV_n"        : "@beam.energy/@beam.nNuclei",
+    
+    "beam.current"      : 1.0e-3,
+    "beam.FWHM"         : "  5.0 * @mm",
+    "beam.zStart"       : "-50.0 * @mm",
+    "beam.zEnd"         : "-70.0 * @mm",
+    "beam.totfact"      : "@beam.current / (2.0*1.602e-19)", // -- unit :: [ particles/s ] -- //
+    "beam.HWHM"         : "0.5 * @beam.FWHM",
+
+
+    // ---------------------------------------------- //
+    // ---  Geometry part                        ---- //
+    // ---------------------------------------------- //
+
+    // --------------------------- //
+    // -- target                -- //
+    // --------------------------- //
+    "target.x0"         : 0.0,
+    "target.y0"         : 0.0,
+    "target.z0"         : 0.0,
+    "target.dx"         : 0.0,
+    "target.dy"         : 0.0,
+    "target.dz"         : "@target.thick",
+
+    // --------------------------- //
+    // -- buffer air            -- //
+    // --------------------------- //
+    "buff.xMin"         : "-100.0 * @mm",
+    "buff.xMax"         : " 100.0 * @mm",
+    "buff.yMin"         : "-100.0 * @mm",
+    "buff.yMax"         : " 100.0 * @mm",
+    "buff.zMin"         : "-100.0 * @mm",
+    "buff.zMax"         : " 100.0 * @mm",
+    
+    // ---------------------------------------------- //
+    // ---  Bounding Box part                    ---- //
+    // ---------------------------------------------- //
+    "bb.margin"         : "10.0 * @mm",
+    "bb.xMin"           : "@buff.xMin - @bb.margin",
+    "bb.xMax"           : "@buff.xMax + @bb.margin",
+    "bb.yMin"           : "@buff.yMin - @bb.margin",
+    "bb.yMax"           : "@buff.yMax + @bb.margin",
+    "bb.zMin"           : "@buff.zMin - @bb.margin",
+    "bb.zMax"           : "@buff.zMax + @bb.margin",
+
+    // ---------------------------------------------- //
+    // ---  tally part                           ---- //
+    // ---------------------------------------------- //
+    "tally.2d.xMin"     : "  -7.0 * @mm",
+    "tally.2d.xMax"     : "   7.0 * @mm",
+    "tally.2d.yMin"     : "-100.0 * @mm",
+    "tally.2d.yMax"     : " 100.0 * @mm",
+    "tally.2d.zMin"     : "  -7.0 * @mm",
+    "tally.2d.zMax"     : "   7.0 * @mm",
+
+}

@@ -1,0 +1,57 @@
+$$
+$$ ---------------------------------------------------------- $$
+$$ --- [1] tally for fluence calculation                   ---$$
+$$ ---------------------------------------------------------- $$
+$$
+$$
+
+[T-Track]
+   mesh =  reg          $$ mesh    :: [ xyz, r-z, reg, tet ]
+    reg =  331          $$ region number ::
+    volume
+     reg     vol
+     331     1.0
+ e-type =    2
+     ne =  300
+   emin =  0.0
+   emax =  60.0
+   part =  alpha
+   unit =    2           $$ unit is [1/cm^2/MeV/source]
+   axis =  eng
+   file =  out/fluence_energy.dat
+  x-txt =  energy [MeV]
+  y-txt =  track length [alphas m/MeV/s]
+ epsout =    1
+
+
+$$
+$$ ---------------------------------------------------------- $$
+$$ --- [2] tally for fluence 2d                            ---$$
+$$ ---------------------------------------------------------- $$
+$$
+$$
+
+[T-Track]
+   mesh =  xyz          $$ mesh    :: [ xyz, r-z, reg, tet ]
+ x-type =    2          $$ x-type  :: [ 1: (nx,data[nx+1]), 2:(nx,xmin,xmax), 3:logarithmic ]
+     nx =   100
+   xmin =  @tally.2d.xMin
+   xmax =  @tally.2d.xMax
+ y-type =    2
+     ny =    1
+   ymin =  @tally.2d.yMin
+   ymax =  @tally.2d.yMax
+ z-type =    2
+     nz =   100
+   zmin =  @tally.2d.zMin
+   zmax =  @tally.2d.zMax
+ e-type =    2
+     ne =    1
+   emin =  0.0
+   emax =  1.0e3
+   axis =   xz
+   file =  out/fluence_2d.dat
+  title =  fluence in xz plane
+  gshow =    1
+ epsout =    1
+
