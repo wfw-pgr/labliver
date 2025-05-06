@@ -1,0 +1,1 @@
+/Users/kent/sphinx/myPasteBoard/myPasteBoard.php

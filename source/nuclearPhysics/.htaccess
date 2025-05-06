@@ -1,0 +1,6 @@
+#####basicauth#####
+AuthUserFile "/home/inspire/inspire.starfree.jp/htpasswd/nuclearPhysics/.htpasswd"
+AuthName "Password Authentification"
+AuthType BASIC
+require valid-user
+#####end:basicauth#####

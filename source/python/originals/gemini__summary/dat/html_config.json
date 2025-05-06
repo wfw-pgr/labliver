@@ -1,0 +1,16 @@
+{
+
+    "settings":{
+	
+	"title"      : "TAT news Library", 
+	"cssFile"    : "dat/style.css",
+	"paramsFile" : "dat/output.json",
+	"htmlFile"   : "html/output.html",
+	
+    },
+
+    "images": {
+
+    },
+    
+}

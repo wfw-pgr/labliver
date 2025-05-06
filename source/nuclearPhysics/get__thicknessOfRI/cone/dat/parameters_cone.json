@@ -1,0 +1,18 @@
+{
+
+    "target.density"  : 4.9,           // (g/cm3)
+    "target.g/mol"    : 297,           // (g/mol)
+    "target.activity" : 1.0e6,        // (Bq)
+    "target.halftime" : [ 1600, "y" ], //
+    "container.D1"    :   1,           // (mm)
+    "container.D3"    :  11,           // (mm)
+    "container.H0"    :  11,           // (mm)
+
+    // D1: diameter of the tip of the container.
+    // D2: diameter of the larger circle of the target.    ( to be solved )
+    // D3: diameter of the glass-tube.
+    // H0: length of the cone. ( container )
+
+    //  h: lenfth of the target ( to be solved )
+    
+}

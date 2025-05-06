@@ -74,7 +74,7 @@
 プロットプログラム
 ---------------------------------------------------------
 
-.. literalinclude:: radiative_equilibrium__basic.py
+.. literalinclude:: pyt/radiative_equilibrium__basic.py
    		    :language: python
 
 

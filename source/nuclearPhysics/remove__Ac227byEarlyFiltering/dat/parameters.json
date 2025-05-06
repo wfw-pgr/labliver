@@ -1,0 +1,37 @@
+{
+
+    "general.pngFile.01" : "png/Ra225_Ac225.png",
+    "general.pngFile.02" : "png/Ra227_Ac227.png",
+    "general.pngFile.03" : "png/summary.png",
+    "general.outFile.01" : "dat/Ra225_Ac225.dat",
+    "general.outFile.02" : "dat/Ra227_Ac227.dat",
+
+    "name.1A"            : "Ra-225",
+    "name.1B"            : "Ac-225",
+    "name.2A"            : "Ra-227",
+    "name.2B"            : "Ac-227",
+    
+    "produced.1A"        : 1.0,
+    "produced.2A"        : 1.0,
+    
+    "halflife.1A"        : "14.9*24*60*60.0",
+    "halflife.1B"        : "9.9*24*60*60.0",
+    "halflife.2A"        : "42.2*60.0", 
+    "halflife.2B"        : "21.7*365*24*60*60.0",
+    "halflife.unit"      : 1.0, 
+    
+    "time.min.01"        : 0.0,
+    "time.max.01"        : 40.0,
+    "time.num.01"        : 10001,
+    "time.unit.01"       : "24*60*60.0",
+
+    "time.min.02"        : 0.0,
+    "time.max.02"        : 40.0,
+    "time.num.02"        : 10001,
+    "time.unit.02"       : "24*60*60.0",
+
+    "normalize.2A"       : 1.0,
+    "normalize.2B"       : 1.0e-5,
+    
+    
+}

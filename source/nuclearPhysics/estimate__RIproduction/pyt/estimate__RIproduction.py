@@ -1,1 +1,1 @@
-/Users/kent/python/physics/radioactive_isotopes/RIproduction/pyt/estimate__RIproduction.py
+/Users/kent/.python/lib/nkScripts/estimate__RIproduction.py

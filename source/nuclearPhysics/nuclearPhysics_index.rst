@@ -47,6 +47,10 @@
    nuclear_transmutation/nuclear_transmutation
    radiative_equilibrium/radiative_equilibrium
    brems_efficiency/brems_efficiency
+   brems__intensity/brems__intensity__p1
+   stoppingPower/Bethe_formula__p1
+   stoppingPower/Bethe_formula__p2
+   stoppingPower/Bethe_formula__p3
    relativeError_cps/relativeError_cps
    ENDF/whatisENDF
    transportation_RI/transportation_RI_01
@@ -56,13 +60,42 @@
 |
 
 ---------------------------------------------------------
-RI製造量計算
+RI製造量計算 ( updated ver. )
 ---------------------------------------------------------
 
 .. toctree::
    :maxdepth: 1
 
-   cross_section_unit/cross_section_unit
+   theory_RIproduction/theory_RIproduction__p1
+   theory_RIproduction/theory_RIproduction__p2
+   estimate__RIproduction/estimate__RIproduction__p1
+   estimate__RIproduction/estimate__RIproduction__p2
+   cross_section/cross_section
+   estimate__time_vs_yield/estimate__time_vs_yield_p1
+   estimate__time_vs_yield/estimate__time_vs_yield_p2
+   estimate__time_vs_yield/estimate__time_vs_yield_p3
+   estimate__time_vs_yield/estimate__time_vs_yield_p4
+   commercialProduction/commercialProduction__p1
+   commercialProduction/commercialProduction__p2
+   commercialProduction/commercialProduction__p3
+   commercialProduction/commercialProduction__p4
+   commercialProduction/commercialProduction__p5
+   commercialProduction/commercialProduction__p6
+   commercialProduction/commercialProduction__p7
+   yieldrate__comparison/yieldrate__comparison
+   talys/talys__p1
+   talys/talys__p2
+
+|
+
+---------------------------------------------------------
+RI製造量計算 ( 旧エントリ含む )
+---------------------------------------------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   cross_section/cross_section_unit
    Ra226_cross_section/Ra226_cross_section
    GDR__BreitWignerFormula/GDR__BreitWignerFormula
    RIproduction/RIproduction_p1
@@ -71,15 +104,28 @@ RI製造量計算
    RIproduction/RIproduction_p4
    RIproduction/RIproduction_p5
    RIproduction/RIproduction_p6
-   estimate__RIproduction/estimate__RIproduction
-   estimate__time_vs_yield/estimate__time_vs_yield_p1
-   estimate__time_vs_yield/estimate__time_vs_yield_p2
-   activity_to_thickness/activity_to_thickness   
+   old__estimate__RIproduction/old__estimate__RIproduction
+   activity_to_thickness/activity_to_thickness
    attenation_correction/attenation_correction
    solve__thickOfCupShapedRI/solve__thickOfCupShapedRI
    aiming__byCorrelationFunction/aiming__byCorrelationFunction
-
+   remove__Ac227byEarlyFiltering/remove__Ac227byEarlyFiltering__p1
+   remove__Ac227byEarlyFiltering/remove__Ac227byEarlyFiltering__p2
+   remove__Ac227byEarlyFiltering/remove__Ac227byEarlyFiltering__p3
+   
 |
+
+
+---------------------------------------------------------
+RI製造量 (アルファ)
+---------------------------------------------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   alphaFlux__disk/alphaFlux__disk
+
+   
 
 =========================================================
 References

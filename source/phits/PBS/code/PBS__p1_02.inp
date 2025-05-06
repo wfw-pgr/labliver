@@ -1,0 +1,24 @@
+$$$ --- PHITS sample code -- $$$
+
+$MPI = 7   ( for 8 cpu 1 is used for control )
+
+[Title]
+sample file
+
+[Parameters]
+  icntl    = 0
+  istdev   = 1
+  file(6)  = out/phits.out
+  file(7)  = /home/user/phitsXS/xsdir.jnd
+  maxcas   = 7e6
+  maxbch   = 70
+
+  negs     = 1
+  ipnint   = 1
+  iprofr   = 0
+  ireschk  = 0
+  itimrand = 1
+
+[Source]
+
+...

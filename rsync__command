@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+rsync -avz -e "ssh -p 10022 -i ~/.ssh/ss076684.key" build/html/ ss076684@ss076684.stars.ne.jp:pgr-techno.com/public_html/Docs/

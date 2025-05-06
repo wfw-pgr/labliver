@@ -1,0 +1,20 @@
+{
+    "incident.mass"        : 1.670e-27,              // (kg)
+    "incident.valent"      : 1.0,                    // (kg)
+    "target.A"             : 27,                     // mass number   A :: (g/mol)
+    "target.Z"             : 13,                     // atomic number Z :: Ta:73, Pt:78
+    "target.rho"           : 2.70,                   // mass density    :: (g/cm3)
+    
+    "Scol.eAxis.MinMaxNum" : [ 1.0e-1, 1.0e3,  30 ], //  [ Emin, Emax, nE ] (MeV)
+    "Scol.eAxis.logarithm" : true,                   //  evenly spaced in log.
+
+    "plot.pngFile"         : "png/stoppingPowerFormula.png" ,
+    "plot.pngFile.ratio"   : "png/stoppingPower_fraction.png" ,
+    "plot.xAxis.MinMaxNum" : [ 1.0e-1, 1.0e3, 5 ],
+    "plot.yAxis.MinMaxNum" : [ 1.0e-1, 1.0e3, 5 ],
+    "plot.xAxis.log"       : true,
+    "plot.yAxis.log"       : true,
+    "plot.xAxis.title"     : "Energy (MeV)",
+    "plot.yAxis.title"     : "-dE/dx (MeV/mm)",
+
+}

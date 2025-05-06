@@ -294,3 +294,12 @@ roles = ['strike', 'red', 'redbold', 'blue', 'basictext']
 from sphinx.locale import admonitionlabels
 admonitionlabels['note']    = u'Note'
 admonitionlabels['warning'] = u'Warning'
+
+# -- copy button -- #
+#
+#   need. -> $ pip install sphinx_copybutton   #
+#
+extensions += ['sphinx_copybutton']
+copybutton_prompt_text = r'>>> |\.\.\. |\$ '
+copybutton_prompt_is_regexp = True
+#

@@ -1,0 +1,163 @@
+{
+
+    // ------------------------------------------------- //
+    // --- [1] General settings                      --- //
+    // ------------------------------------------------- //
+    "series"                 :[ "beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01", 
+				"beamON.01", "beamOFF.01", "separation.01", "preparation.01"  
+			      ],
+    "series.time.unit"       :"d",           // [ "y", "d", "h", "m", "s" ]
+    "A0.init"                :0.0,           // (Bq)
+    "B0.init"                :0.0,      
+    "tHalf.A"                :[ 14.9, "d" ], // [ value, unit ]
+    "tHalf.B"                :[  9.9, "d" ], 
+
+    "result.outFile"         : "dat/result_20241219.dat", 
+
+    
+    // ------------------------------------------------- //
+    // --- [2] Yield rate                            --- //
+    // ------------------------------------------------- //
+
+    "Y.efficiency.type"      : "Yn_product_bq",
+    "Y.efficiency.value"     : 1.38e-8,
+    // ---------------------------------------------------------------- //
+    //  [ "Yieldrate" (atoms/s), "Y_product", "Y_decayed" (Bq/s),
+    //    "Yn_product_wt", "Yn_decayed_wt" (Bq/mg/uA/s),
+    //    "Yn_product_bq", "Yn_decayed_Bq" (Bq/mg/uA/s) ]
+    // ---------------------------------------------------------------- //
+
+    "Y.normalize"            : true,
+    "Y.normalize.mg"         : null,         // (mg)
+    "Y.normalize.Bq"         : 11.1e9,       // (Bq)
+    "Y.normalize.uA"         : 300.0,        // (uA)
+    "Y.ratio.B/A"            : 0.445,        // if decayed, efficiency x A/B
+    //                                       // ( "product" mode is prefferable. )
+    "Y.recycle.factor"       : 0.99,         // recycle factor of target material.
+
+    // ------------------------------------------------- //
+    // --- [3] time sries settings                  --- //
+    // ------------------------------------------------- //
+    
+    "beamON.01"              : {
+	"dt"                 : [ 6.0, "d" ], // [ time, unit ]  
+	"beam.relint"        : 1.0,          // relative Yield rate: Y  ==>  beam on/off = ( 1/0 )
+	"nPoints"            : 41,           // number of data samplings
+	"separation"         : false, 
+    },
+    "beamOFF.01"             : {
+	"dt"                 : [ 1.0, "d" ],  
+	"beam.relint"        : 0.0,
+	"nPoints"            : 11,
+	"separation"         : false, 
+    }, 
+    "separation.01"          : {
+	"dt"                 : [ 1.0, "d" ],  
+	"beam.relint"        : 0.0,
+	"nPoints"            : 11,
+	"separation"         : true,
+	"separation.timing"  : "end", 
+    }, 
+    "preparation.01"         : {
+	"dt"                 : [ 2.0, "d" ],  
+	"beam.relint"        : 0.0,
+	"nPoints"            : 11,
+	"separation"         : false, 
+    },
+
+    
+    // ------------------------------------------------- //
+    // --- [4] figure settings                       --- //
+    // ------------------------------------------------- //
+    "figure.num.y.normalize" : 1.0                        ,
+    "figure.num.label.A"     :"$N_{Ra225}$"               , 
+    "figure.num.label.B"     :"$N_{Ac225}$"               , 
+
+    "figure.act.y.normalize" : 1.0e9                      ,
+    "figure.act.label.A"     :"$A_{Ra225}$"               ,
+    "figure.act.label.B"     :"$A_{Ac225}$"               ,
+    
+    "figure.cum.y.normalize" : 1.0e9                      , 
+    "figure.cum.label.B"     : "Cumulative"               ,
+
+    "figure.num.config"      : {
+	"figure.size"        : [4.5,4.5],
+	"figure.pngFile"     : "png/time_vs_atoms_20241219.png"    , 
+	"figure.position"    : [ 0.16, 0.16, 0.84, 0.84 ] ,
+	"ax1.x.range"        : { "auto":false, "min":0.0, "max": 400, "num": 5 },
+	"ax1.y.range"        : { "auto":false, "min":0.0, "max": 100, "num":11 },
+	// "ax1.x.range.auto"   : false,
+	// "ax1.y.range.auto"   : false,
+	// "ax2.y.range.auto"   : false,
+	// "ax1.x.range"        : [  0.0,  400,  5 ],
+	// "ax1.y.range"        : [  0.0,  100, 11 ],
+	// "ax2.y.range"        : [  0.0, 1000,  6 ],
+	"ax1.x.label"        : "Time (d)"                 ,
+	"ax1.y.label"        : "Number of Atoms"          ,
+	"legend.location"    : "best"                     ,
+    }                                                     ,
+
+    "figure.act.config"      :{
+	"figure.size"        : [4.5,4.5],
+	"figure.pngFile"     : "png/time_vs_activity_20241219.png"    ,
+	"figure.position"    : [ 0.16, 0.16, 0.84, 0.84 ]    ,
+	"ax1.x.range"        : { "auto":false, "min":0.0, "max": 400, "num":5 },
+	"ax1.y.range"        : { "auto":false, "min":0.0, "max": 100, "num":6 },
+	"ax2.y.range"        : { "auto":false, "min":0.0, "max":1000, "num":6 },
+	"ax1.x.label"        : "Time (d)"                    ,
+	"ax1.y.label"        : "Activity (GBq)"              ,
+	"ax2.y.label"        : "Cumulative Production (GBq)" ,
+	"legend.location"    : "upper left"                  ,
+    }
+
+}

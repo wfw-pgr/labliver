@@ -1,0 +1,6 @@
+projectile g
+element    Ra
+mass       226
+energy     1 50 0.1
+ejectiles  p
+fission    n

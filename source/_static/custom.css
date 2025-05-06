@@ -1,42 +1,129 @@
+/* -- */
+/* ====================================== */
+/* ===      全体フォント設定          === */
+/* ====================================== */
+/* -- */
+
 :root {
     --pst-font-size-base: 10px;
 }
-
 cite, code, tt {
     font-family: 'Ricty','Ricty Diminished','DejaVu Sans Mono', 'monospace';
     /* font-family: 'Ricty'; */
 }
-
 pre {
     font-family: 'Ricty','Ricty Diminished','DejaVu Sans Mono', 'monospace';
     /* font-family: "Ricty"; */
 }
-
-/*
 body {
-    font-family: "Ricty";
+    font-family: 'Ricty','Ricty Diminished','DejaVu Sans Mono', 'monospace';
+    /* line-height: 1.2; */
 }
-*/
-
 .basictext {
     font-family: 'Ricty','Ricty Diminished','DejaVu Sans Mono', 'monospace';
     color: blue;
 }
 
+
+/* ====================================== */
+/* ===      表のカスタム設定          === */
+/* ====================================== */
+/* -- */
+/* 中央寄せ & 小さいフォントサイズのcsv-table */
+table.docutils.csv-table {
+    text-align: center;
+    font-size: 80%;
+}
+table.docutils.csv-table td,
+table.docutils.csv-table th {
+    text-align: center;
+}
+
+
+/* ====================================== */
+/* ===       独自ロールの設定         === */
+/* ====================================== */
+/* -- */
+/* ----------------- */
+/* -- 打ち消し線  -- */
+/* ----------------- */
 .strike {
   text-decoration: line-through;
 }
-
+/* ----------------- */
+/* -- 赤文字強調  -- */
+/* ----------------- */
 .red {
     color: red;
     font-weight: bold;
 }
-
-.redbold {
-    color: red;
-}
-
+/* ----------------- */
+/* -- 青文字強調  -- */
+/* ----------------- */
 .blue {
     color: blue;
     font-weight: bold;
 }
+
+
+/* ====================================== */
+/* ===   コードリスティングスタイル   === */
+/* ====================================== */
+/* -- */
+/* ------------------------------------------ */
+/* -- literalinclude, code-block スタイル  -- */
+/* ------------------------------------------ */
+div.highlight,
+div.highlight pre,
+pre.literal-block {
+    position: relative;     /* copybtn位置制御のために必要な場合が多い */
+    background: #1e1e1e ;
+    color: #d4d4d4 ;
+    font-family: Ricty, Consolas, Menlo, Monaco, "Courier New", monospace ;
+    border-radius: 6px ;
+    padding: 1em ;
+    font-size: 0.95em ;
+    line-height: 1.5 ;
+    white-space: pre ;  /* 自動折り返し禁止 */
+    box-sizing: border-box;
+}
+/* -------------------- */
+/* 横・縦スクロール対応 */
+/* -------------------- */
+div.highlight pre {
+    overflow-x: auto ;
+    overflow-y: auto ;
+    max-height: 400px ;  /* 必要に応じて調整 */
+    max-width: 100% ;
+}
+/* ----------------- */
+/* コピーボタン 設定 */
+/* ----------------- */
+div.highlight .copybtn {
+    /* -- */  
+    /*  -- ボタン外観 -- */
+    /* -- */  
+    position: absolute;
+    top: 16px;             /* 上からの位置        */
+    right: 24px;           /* 右からの位置        */
+    z-index: 10;           /* 重ね位置（最前面）  */
+ 
+    background-color: aqua ;
+    color: navy ;
+    border: none;
+    border-radius: 6px;
+    padding: 3px 3px;      /* 内側余白サイズ      */
+    font-size: 1.2em;      /* アイコンサイズ      */
+    opacity: 0.4;          /* 1：透明, 0：不透明  */
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+div.highlight .copybtn:hover {
+    /* -- */  
+    /* -- マウスホバー -- */
+    /* -- */  
+    background-color: aqua ;
+    opacity: 0.8 ;
+}
+
+

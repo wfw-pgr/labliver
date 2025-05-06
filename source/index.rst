@@ -3,6 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+   
 ##############################################################
 らぼらいばーの備忘録
 ##############################################################
@@ -22,15 +23,15 @@
 .. toctree::
    :maxdepth: 1
 
-   sphinx/rst/sphinx_index
-   linux/linux_index
+   sphinx/sphinx__index
+   linux/linux__index
+   emacs/emacs__index
    fortran/rst/fortran_index
    tex/tex
    cpp/index
    vtk/index
-   git/rst/git_index
-   emacs/rst/emacs_index
    python/python_index
+   pc-tips/pc-tips__index
 
    
 |
@@ -66,11 +67,13 @@
    trk4/rst/introduction
    electricCircuit/index_electricCircuit
    superconductor/index
+   engineering/engineering_index
    thermalDesign/rst/thermalDesign_index
    epics/rst/epics_index
    opencv/rst/opencv_index
    machineLearning/rst/machineLearning_index
    solidworks/rst/solidworks_index
+   arduino/arduino_index
    patent/patent_index
 
 |
@@ -84,12 +87,21 @@
    
    eulopian_history/rst/history
    template/rst/xxx_index
-   uploader/rst/uploader_index
+   uploader/uploader_index
    stockMarket/rst/stockMarket_index
    labnote/labnote_index
+   
 
 |
-   
+
+
+---------------------------------------------------------
+Paste Board (for personal memos):  
+---------------------------------------------------------
+
+`myPasteBoard <../myPasteBoard/myPasteBoard.php>`__
+
+
 Indices and tables
 ====================================================
 

@@ -1,0 +1,18 @@
+{
+
+    "target.density"  : 4.9,           // (g/cm3)
+    "target.g/mol"    : 297,           // (g/mol)
+    "target.activity" : 200.0e6,       // (Bq)
+    "target.halftime" : [ 1600, "y" ], //
+
+    "container.D1"    :   3,           // (mm)
+    "container.D2"    :   9,           // (mm)
+    "container.H1"    :   9,           // (mm)
+    "container.H2"    :  51,           // (mm)
+
+    // D1: Diameter of the tip
+    // D2: Diameter of the stem
+    // H1: length of the tip 
+    // H2: length of the step
+    
+}
