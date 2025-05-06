@@ -45,6 +45,7 @@ Sphinxのカスタマイズ
    customs/customs__p4
    customs/customs__p5
    customs/customs__p6
+   customs/customs__p7
 
 |
    
